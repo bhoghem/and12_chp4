@@ -38,6 +38,9 @@ class MenuActivity : AppCompatActivity() {
         binding.pemainMenuTxt.setOnClickListener({
             launchToMain2()
         })
+        binding.btnLead.setOnClickListener({
+            launchToLeaderboard()
+        })
     }
 
     private fun launchToMain() {
@@ -50,6 +53,11 @@ class MenuActivity : AppCompatActivity() {
         val main2Intent = Intent(this, Main2Activity::class.java) //dari splash ke main activity
         main2Intent.putExtra("NAME_DATA", intent.getStringExtra("NAME_DATA").toString());
         startActivity(main2Intent)
+    }
+
+    private fun launchToLeaderboard() {
+        val leadIntent = Intent(this, LeaderboardActivity::class.java)
+        startActivity(leadIntent)
     }
 
     private fun setMenuName(nameData: String) {

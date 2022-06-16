@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager
 import com.example.rockpaperscissors.fragment.Slide1Fragment
 import com.example.rockpaperscissors.fragment.Slide2Fragment
 import com.example.rockpaperscissors.fragment.Slide3Fragment
+import com.example.rockpaperscissors.fragment.Slide4Fragment
 import com.github.appintro.AppIntro
 
 class RPSIntro : AppIntro() {
@@ -22,6 +23,7 @@ class RPSIntro : AppIntro() {
         addSlide(Slide1Fragment())
         addSlide(Slide2Fragment())
         addSlide(Slide3Fragment())
+        addSlide(Slide4Fragment())
         setIndicatorColor(Color.parseColor("#0070C0"), Color.parseColor("#C3DAE9"))
         setColorSkipButton(Color.parseColor("#0070C0"))
         setColorDoneText(Color.parseColor("#0070C0"))

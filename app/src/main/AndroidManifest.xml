@@ -22,6 +22,8 @@
         <activity android:name=".MenuActivity"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".Main2Activity"/>
+        <activity android:name=".LeaderboardActivity"/>
+
     </application>
 
 </manifest>
